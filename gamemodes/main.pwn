@@ -9,6 +9,7 @@
 #include <whirlpool>
 #include <WeatherSystem>
 #include <gametext_plus>
+
 #define OVERRIDE_NATIVE_GAMETEXT
 
 #include "modules/utils/colors.inc"
@@ -27,13 +28,13 @@
 public OnGameModeInit()
 {
     print("Gamemode initialized successfully.");
-    return 1;
+    return true;
 }
 
 public OnGameModeExit()
 {
     print("Gamemode unloaded successfully.");
-    return 1;
+    return true;
 }
 
 main()
